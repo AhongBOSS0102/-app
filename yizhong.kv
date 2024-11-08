@@ -1,0 +1,22 @@
+#:kivy 2.3.0
+MDScreen:
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 20
+        spacing: 20
+
+        MDLabel:
+            text: "一中街吃什麼"
+            halign: "center"
+            font_style: "H4"
+
+        MDRaisedButton:
+            text: "隨機選擇"
+            pos_hint: {"center_x": 0.5}
+            on_release: app.pick_restaurant()
+
+        MDLabel:
+            id: result_label
+            text: "選擇結果會顯示在這裡"
+            halign: "center"
+            theme_text_color: "Secondary"

@@ -3,6 +3,10 @@ import random
 import openpyxl
 from kivy.lang import Builder
 from kivymd.app import MDApp
+from kivy.core.text import LabelBase
+
+LabelBase.register(name="NotoSansTC", fn_regular="/home/kali/fonts/NotoSansTC-VariableFont_wght.ttf")
+
 
 # 從 Excel 讀取餐廳名稱和位置
 def read_restaurants_from_excel(file_path):

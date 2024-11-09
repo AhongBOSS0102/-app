@@ -9,14 +9,17 @@ MDScreen:
             text: "一中街吃什麼"
             halign: "center"
             font_style: "H4"
+            font_name: "NotoSansTC"
 
         MDRaisedButton:
             text: "隨機選擇"
             pos_hint: {"center_x": 0.5}
             on_release: app.pick_restaurant()
+            font_name: "NotoSansTC"
 
         MDLabel:
             id: result_label
             text: "選擇結果會顯示在這裡"
             halign: "center"
             theme_text_color: "Secondary"
+            font_name: "NotoSansTC"
